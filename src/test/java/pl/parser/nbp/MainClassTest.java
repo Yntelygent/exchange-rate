@@ -14,4 +14,5 @@ public class MainClassTest {
     public void just_a_stupid_passing_test_to_ensure_that_tests_are_run() {
         Assert.assertNotNull(mainClass);
     }
+
 }

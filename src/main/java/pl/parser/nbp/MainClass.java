@@ -8,7 +8,12 @@ public class MainClass {
     public static void main(String[] args) {
 
         CurrencyService currencyService = new CurrencyService();
-        currencyService.calculateAverangeExchangeRate("EUR", "2013-01-28", "2013-01-31");
+
+        if(args.length > 2) {
+            currencyService.calculateAverangeExchangeRate(args[0], args[1], args[2]);
+        } else {
+            System.out.println("Wprowadzono zbyt mało parametrów");
+        }
 
     }
 }
